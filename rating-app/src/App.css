@@ -1,0 +1,25 @@
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between circles */
+  margin: 20px 0;
+}
+
+.circle {
+  width: 50px; /* Adjust the size of the circle */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Make it a circle */
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.circle.selected {
+  background-color: #4caf50; /* Green for selected */
+  color: white;
+}
